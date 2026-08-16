@@ -1,0 +1,67 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# FastAPI / Python env
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# Node / React
+# =========================
+
+node_modules/
+dist/
+build/
+
+# Environment files
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# =========================
+# IDE / Editors
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# Windows
+# =========================
+
+Thumbs.db
+Desktop.ini
+
+# =========================
+# Logs
+# =========================
+
+*.log
+
+# =========================
+# OS / temporary files
+# =========================
+
+.DS_Store
+*.tmp
+*.temp
