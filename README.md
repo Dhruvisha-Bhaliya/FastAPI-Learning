@@ -1,6 +1,6 @@
 # FastAPI + React + PostgreSQL
 
-A full-stack application using **FastAPI**, **React.js**, and **PostgreSQL**.
+A full-stack CRUD application using **FastAPI**, **React.js**, and **PostgreSQL**.
 
 ---
 
@@ -17,7 +17,7 @@ backend/
 ├── requirements.txt
 └── .env
 
-```markdown
+```
 
 📄 Backend Files
 venv/
@@ -75,9 +75,9 @@ This file should not be committed to GitHub.
 ⚠️ Files Excluded from Git
 venv/
 
-Contains the project's installed Python packages and virtual environment files.
+Contains the project's Python virtual environment and installed packages.
 
-It should not be committed because it is environment-specific and can be recreated using Python.
+It should not be committed because it is specific to the local development environment.
 
 .env
 
@@ -131,32 +131,32 @@ Python-dotenv loads environment variables from the .env file.
 It allows configuration such as database credentials to remain outside the application source code.
 
 ⚙️ Backend Commands
-Create Virtual Environment
+1. Create Virtual Environment
 python -m venv venv
 
 Creates an isolated Python environment for the project.
 
-Activate Virtual Environment
+2. Activate Virtual Environment
 venv\Scripts\activate
 
 Activates the project's virtual environment so Python and installed packages are taken from that environment.
 
-Install Backend Packages
+3. Install Backend Packages
 pip install fastapi uvicorn sqlalchemy psycopg python-dotenv
 
 Installs the packages required to build and run the backend.
 
-Generate Requirements File
+4. Generate Requirements File
 pip freeze > requirements.txt
 
 Records the installed Python package versions so the same backend dependencies can be installed later.
 
-Install Requirements
+5. Install Requirements
 pip install -r requirements.txt
 
 Installs all Python dependencies listed in requirements.txt.
 
-Run FastAPI
+6. Run FastAPI
 uvicorn main:app --reload
 
 Starts the FastAPI application using Uvicorn.
@@ -164,7 +164,7 @@ Starts the FastAPI application using Uvicorn.
 main refers to main.py.
 app refers to the FastAPI application instance.
 --reload automatically restarts the server when backend source files change during development.
-Deactivate Virtual Environment
+7. Deactivate Virtual Environment
 deactivate
 
 Exits the project's Python virtual environment and returns to the system Python environment.
@@ -188,6 +188,7 @@ SQLAlchemy
 Psycopg
    ↓
 PostgreSQL
+🔁 Response Flow
 
 The response follows the reverse direction:
 
